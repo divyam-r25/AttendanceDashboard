@@ -1,16 +1,110 @@
-# React + Vite
+# 🎓 Student Attendance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React-based dashboard that helps visualize and manage student attendance.
+I built this project to practice **React concepts like state management, filtering, and component design**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+* 📡 Fetches student data from an API
+* 📊 Displays attendance percentage for each student
+* 🎯 Filter students by:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  * All
+  * Present
+  * Absent
+* ⚠️ Toggle to show students with **less than 75% attendance**
+* 🔄 Sort students based on attendance percentage
+* ✅ Manually mark students as **Present / Absent**
+* 🎨 Color-coded UI:
 
-## Expanding the ESLint configuration
+  * Green → Good attendance
+  * Red → Low attendance
+* 🖱️ Click on a student row to highlight it
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Tech Stack
+
+* **React (Functional Components)**
+* **useState & useEffect hooks**
+* **Tailwind CSS**
+* **Fetch API**
+
+---
+
+##  What I Learned
+
+While building this project, I got hands-on experience with:
+
+* Managing state using `useState`
+* Handling side effects using `useEffect`
+* Component-based architecture
+* Passing data using props
+* Filtering and sorting data
+* Conditional rendering
+* Updating state immutably
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+ ├── components/
+ │   ├── AttendanceDashboard.jsx
+ │   ├── FilterControls.jsx
+ │   ├── StudentList.jsx
+ │   └── StudentRow.jsx
+ ├── App.jsx
+ └── index.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+2. Navigate into the project:
+
+```bash
+cd your-repo-name
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the project:
+
+```bash
+npm run dev
+```
+
+---
+
+##  Notes
+
+* The attendance percentage is randomly generated.
+* The present/absent status can be toggled manually.
+* Filtering is based on the current state of each student.
+
+---
+
+##  Future Improvements
+
+* Add search functionality 🔍
+* Add charts for analytics 📊
+* Add backend for real data storage
+* Add authentication
+
+---
+
